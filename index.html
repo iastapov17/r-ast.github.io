@@ -50,7 +50,7 @@
   <script>
     let tg = window.Telegram.WebApp;
     tg.expand();
- 
+    Telegram.WebApp.setBackgroundColor('#FFFFFF');
     let user_img = document.getElementById("user-img");
     if (tg.initDataUnsafe?.user?.photo_url !== undefined) {
         user_img.src = tg.initDataUnsafe.user.photo_url;
