@@ -1,204 +1,234 @@
-.top-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.top-span {
-    display: block;
-    margin: 0 auto;
-
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: -0.01em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #21201F;
-}
-
-.top-img {
-  margin-right: 20px;
-  border-radius: 50%;
-  width: 40px;
-}
-
-.order-span {
-    padding: 8px;
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    color: #21201F;
-    letter-spacing: -0.01em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-}
-
-.order-price-span {
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 17px;
-    color: #21201F;
-    letter-spacing: -0.01em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-}
-
-.item-name-td {
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 17px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #21201F;
-}
-
-.item-count-td {
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 14px;
-    text-align: right;
-    letter-spacing: -0.005em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #9E9B98;
-}
-
-.item-price-td {
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 17px;
-    text-align: right;
-    letter-spacing: -0.005em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #21201F;
-}
-
-.item-button {
-    background-color: #f1f0ed;
-    border-radius: 10px;
-    padding: 10px 10px;
-    border: none;
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 14px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    
-    color: #535353;
-}
-
-table {
-    width: 100%;
-    border-collapse: inherit;
-    table-layout: fixed;
-    text-align: center;
-    font: 13px Verdana;
-    border-radius: 30px;
-    border-spacing: 0 5px;
-}
-
-table td {
-    border: 0.5px solid #D0CFCE;
-    padding: 8px;
-    border-left: none;
-    border-right: none;
-}
-
-table td:first-child {
-    text-align: left;
-    border-left: 0.5px solid #D0CFCE;
-    border-radius: 15px 0 0 15px;
-}
-
-table td:last-child {
-    text-align: right;
-    border-right: 0.5px solid #D0CFCE;
-    border-radius: 0 15px 15px 0;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
-.bottom-div {
-    position: fixed;
-    bottom: 0;
+  .top-div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  
-    width: 99%;
-    height: 72px;
-  
-    background: #ffffff;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    background: #FFFFFF;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.12);
-    border-radius: 24px 24px 0px 0px;
-}
-
-.bottom-total-div {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.bottom-span {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 16px;
-
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #9E9B98;
-}
-
-.bottom-price-span {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 16px;
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 21px;
-    letter-spacing: -0.01em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #21201F;
-}
+    border-radius: 0px 0px 24px 24px;
+  }
   
-.done-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 8px;
+  .top-span {
+      display: block;
+      margin: 0 auto;
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #21201F;
+  }
   
-    width: 65%;
-    height: 56px;
+  .top-order {
+    position: absolute;
+    padding: 2%;
+    padding-bottom: 20px;
+    bottom: 0;
+    left: 0;
+  }
   
-    background: #000000;
-    border-radius: 16px;
-    font-family: 'Abel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 17px;
-    /* identical to box height, or 106% */
-    text-align: center;
-    letter-spacing: -0.005em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-
-    color: #FFFFFF;
-}
+  .top-button {
+    position: absolute;
+    padding-right: 3%;
+    padding-bottom: 10px;
+    bottom: 0;
+    right: 0;
+  }
   
+  .plus-button {
+    background-color: #fff;
+    color: #707070;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .order-span {
+      padding: 8px;
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #21201F;
+  }
+  
+  .order-price-span {
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 17px;
+      color: #21201F;
+      letter-spacing: -0.01em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+  }
+  
+  .item-name-td {
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 17px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #21201F;
+  }
+  
+  .item-count-td {
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 14px;
+      text-align: right;
+      letter-spacing: -0.005em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #9E9B98;
+  }
+  
+  .item-price-td {
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 17px;
+      text-align: right;
+      letter-spacing: -0.005em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #21201F;
+  }
+  
+  .item-button {
+      background-color: #f1f0ed;
+      border-radius: 10px;
+      padding: 10px 10px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 14px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      
+      color: #535353;
+  }
+  
+  table {
+      width: 100%;
+      border-collapse: inherit;
+      table-layout: fixed;
+      text-align: center;
+      font: 13px Verdana;
+      border-radius: 30px;
+      border-spacing: 0 5px;
+  }
+  
+  table td {
+      border: 0.5px solid #D0CFCE;
+      padding: 8px;
+      border-left: none;
+      border-right: none;
+  }
+  
+  table td:first-child {
+      text-align: left;
+      border-left: 0.5px solid #D0CFCE;
+      border-radius: 15px 0 0 15px;
+  }
+  
+  table td:last-child {
+      text-align: right;
+      border-right: 0.5px solid #D0CFCE;
+      border-radius: 0 15px 15px 0;
+  }
+    
+  .bottom-div {
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+      width: 99%;
+      height: 72px;
+    
+      background: #ffffff;
+      box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.12);
+      border-radius: 24px 24px 0px 0px;
+  }
+  
+  .bottom-total-div {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  }
+  
+  .bottom-span {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 16px;
+  
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #9E9B98;
+  }
+  
+  .bottom-price-span {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 16px;
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #21201F;
+  }
+    
+  .done-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 8px;
+    
+      width: 65%;
+      height: 56px;
+    
+      background: #000000;
+      border-radius: 16px;
+      font-family: 'Abel';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 17px;
+      /* identical to box height, or 106% */
+      text-align: center;
+      letter-spacing: -0.005em;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+  
+      color: #FFFFFF;
+  }
+    
