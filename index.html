@@ -11,48 +11,57 @@
   <meta name="robots" content="noindex,nofollow" />
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
-  <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <!--Подключаем скрипт от телеграм-->
   <title>Splitter</title>
 </head>
 
 <body>
   <div class="top-div">
-    <span class="top-span">Telegram chat</span>
+    <span class="top-span" id="title">The Bull</span>
+    <br><br>
+    <div class="top-order">
+      <span class="order-span">Order</span>
+      <span class="order-price-span">2500₽</span>
+    </div>
+    <div class="top-button">
+      <button class="plus-button">
+        <svg style="color: #707070;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" fill="#707070"></path>
+        </svg>
+      </button>
+    </div>
   </div>
-  <br><br>
-  <div>
-    <span class="order-span">Заказ:</span>
-    <span class="order-price-span">2500₽</span>
-  </div>
-  <table>
+  <table style="padding: 8px;">
     <tr>
-      <td class="item-name-td">Капучино</td>
-      <td class="item-count-td">3 шт</td>
+      <td class="item-name-td">Cappuccino</td>
+      <td class="item-count-td">3 pcs</td>
       <td class="item-price-td">280 ₽</td>
-      <td><button class="item-button">Выбрать</button></td>
+      <td><button class="item-button">Select</button></td>
     </tr>
     <tr>
-      <td class="item-name-td">Авокадо тост</td>
-      <td class="item-count-td">10000 шт</td>
+      <td class="item-name-td">Avocado toast</td>
+      <td class="item-count-td">10000 pcs</td>
       <td class="item-price-td">22800 ₽</td>
-      <td><button class="item-button">Выбрать</button></td>
+      <td><button class="item-button">Select</button></td>
     </tr>
   </table>
 </body>
-  <div class="bottom-div">
-    <div class="bottom-total-div">
-        <span class="bottom-span">Ваш итог:</span>
-        <span class="bottom-price-span">2000 ₽</span>
-    </div>
-    <button class="done-button">Готово</button>
+<div class="bottom-div">
+  <div class="bottom-total-div">
+    <span class="bottom-span">Total:</span>
+    <span class="bottom-price-span">2000 ₽</span>
   </div>
-  <script>
-    let tg = window.Telegram.WebApp;
-    tg.expand();
-    Telegram.WebApp.setBackgroundColor('#FFFFFF');
-    let user_img = document.getElementById("user-img");
-    if (tg.initDataUnsafe?.user?.photo_url !== undefined) {
-        user_img.src = tg.initDataUnsafe.user.photo_url;
-    }
- </script>
+  <button class="done-button">Done</button>
+</div>
+<script>
+  let tg = window.Telegram.WebApp;
+  tg.expand();
+  Telegram.WebApp.setBackgroundColor('#FFFFFF');
+  let user_img = document.getElementById("user-img");
+  if (tg.initDataUnsafe?.user?.photo_url !== undefined) {
+    user_img.src = tg.initDataUnsafe.user.photo_url;
+  }
+</script>
+
 </html>
